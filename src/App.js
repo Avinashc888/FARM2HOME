@@ -8,10 +8,10 @@ const STORAGE_KEY = "farm2home_farmers";
 function HomePage() {
   const [selectedCategory] = useState("All");
   const products = [
-    { name: "Tomatoes", price: "₹40/kg", category: "Vegetables" },
-    { name: "Potatoes", price: "₹30/kg", category: "Vegetables" },
-    { name: "Mangoes", price: "₹99/kg", category: "Fruits" },
-    { name: "Milk", price: "₹55/L", category: "Dairy" },
+    { name: "Tomatoes", price: "₹40/kg", category: "Vegetables", img: "/images/Tomato.jpeg" },
+    { name: "Potatoes", price: "₹30/kg", category: "Vegetables", img: "/images/Potato.jpg" },
+    { name: "Mangoes", price: "₹99/kg", category: "Fruits", img: "/images/Mango.jpeg" },
+    { name: "Milk", price: "₹55/L", category: "Dairy", img: "/images/Milk.jpeg" },
   ];
 
   return (
@@ -44,7 +44,13 @@ function HomePage() {
           <div className="grid md:grid-cols-4 gap-6">
             {products.map((p, i) => (
               <div key={i} className="bg-gray-50 border rounded-xl p-6 hover:shadow-xl transition-all text-center">
-                <div className="w-24 h-24 bg-green-200 rounded-full mx-auto mb-4 flex items-center justify-center text-lg font-semibold">{p.name}</div>
+                <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden flex items-center justify-center bg-green-200">
+                  <img 
+                    src={p.img} 
+                    alt={p.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="font-bold text-lg mb-2">{p.name}</h3>
                 <p className="text-green-600 text-2xl font-bold mb-4">{p.price}</p>
                 <button className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold">Add to Cart</button>

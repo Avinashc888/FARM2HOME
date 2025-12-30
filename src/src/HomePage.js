@@ -9,16 +9,16 @@ const categories = [
 
 const products = [
   {
-    id: 1, name: "Tomatoes", price: "₹40 /kg", img: "https://via.placeholder.com/300x200?text=Tomatoes", category: "Vegetables",
+    id: 1, name: "Tomatoes", price: "₹40 /kg", img: "/images/Tomato.jpeg", category: "Vegetables",
   },
   {
-    id: 2, name: "Potatoes", price: "₹30 /kg", img: "https://via.placeholder.com/300x200?text=Potatoes", category: "Vegetables",
+    id: 2, name: "Potatoes", price: "₹30 /kg", img: "/images/Potato.jpg", category: "Vegetables",
   },
   {
-    id: 3, name: "Mangoes", price: "₹99 /kg", img: "https://via.placeholder.com/300x200?text=Mangoes", category: "Fruits",
+    id: 3, name: "Mangoes", price: "₹99 /kg", img: "/images/Mango.jpeg", category: "Fruits",
   },
   {
-    id: 4, name: "Milk", price: "₹55 /L", img: "https://via.placeholder.com/300x200?text=Milk", category: "Dairy",
+    id: 4, name: "Milk", price: "₹55 /L", img: "/images/Milk.jpeg", category: "Dairy",
   },
   {
     id: 5, name: "Organic Rice", price: "₹120 /kg", img: "https://via.placeholder.com/300x200?text=Organic+Rice", category: "Grains",
@@ -33,9 +33,9 @@ const products = [
 
 const deals = [
   { name: "Onions", offer: "Up to 30% off", price: "From ₹29", img: "https://via.placeholder.com/260x160?text=Onions" },
-  { name: "Potatoes", offer: "Up to 40% off", price: "From ₹25", img: "https://via.placeholder.com/260x160?text=Potatoes" },
-  { name: "Mangoes", offer: "Season Special", price: "From ₹99", img: "https://via.placeholder.com/260x160?text=Mangoes" },
-  { name: "Milk", offer: "Daily essentials", price: "From ₹55", img: "https://via.placeholder.com/260x160?text=Milk" },
+  { name: "Potatoes", offer: "Up to 40% off", price: "From ₹25", img: "/images/Potato.jpg" },
+  { name: "Mangoes", offer: "Season Special", price: "From ₹99", img: "/images/Mango.jpeg" },
+  { name: "Milk", offer: "Daily essentials", price: "From ₹55", img: "/images/Milk.jpeg" },
   { name: "Wheat", offer: "Bulk offers", price: "From ₹39", img: "https://via.placeholder.com/260x160?text=Wheat" },
   { name: "Sugar", offer: "Combo packs", price: "From ₹45", img: "https://via.placeholder.com/260x160?text=Sugar" },
 ];
